@@ -47,6 +47,23 @@ editions are genuinely usable — if they save you one bad AI edit or one reject
 submission, the full edition is there when you want the interview flow, the
 validation tooling and the platform rules reference.
 
+## Real examples — generated from real public projects
+
+Before selling the full edition, we ran AGENTS.md Forge on two real public
+repositories that had **no `AGENTS.md` anywhere** (verified by cloning and
+searching the whole tree, including `CLAUDE.md` / `.cursorrules` — 0 hits).
+The full generated drafts are in this repo under `examples/real-runs/`:
+
+| Project | Before | After (this repo) | Self-check |
+|---|---|---|---|
+| [sindresorhus/slash](https://github.com/sindresorhus/slash) (single-function npm package, main `@2e8a56bd`, 2026-09-19) | No rules file; conventions only in `package.json`, `index.js`, tests and CI | `examples/real-runs/slash/AGENTS.md` — 45 lines | PASS (sections complete, no leftover placeholders, under the 120-line cap) |
+| [pallets/itsdangerous](https://github.com/pallets/itsdangerous) (Python signing library, main `@672971d6`, 2025-06-14) | No rules file; conventions scattered across `pyproject.toml`, pre-commit hooks and the PR template | `examples/real-runs/itsdangerous/AGENTS.md` — 47 lines | PASS (same checks) |
+
+These drafts were generated locally from a read-only scan of each project.
+Nothing was submitted to the upstream repositories — no PR, no issue, no push.
+Anything the scan could not establish (e.g. release cadence) is listed under
+"待确认" at the end of each draft instead of invented.
+
 ## License
 
 The Lite editions in this repository are released under the MIT License
