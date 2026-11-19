@@ -49,7 +49,7 @@ validation tooling and the platform rules reference.
 
 ## Real examples — generated from real public projects
 
-Before selling the full edition, we ran AGENTS.md Forge on three real public
+Before selling the full edition, we ran AGENTS.md Forge on four real public
 repositories that had **no `AGENTS.md` anywhere** (verified by cloning and
 searching the whole tree, including `CLAUDE.md` / `.cursorrules` — 0 hits).
 The full generated drafts are in this repo under `examples/real-runs/`:
@@ -59,6 +59,7 @@ The full generated drafts are in this repo under `examples/real-runs/`:
 | [sindresorhus/slash](https://github.com/sindresorhus/slash) (single-function npm package, main `@2e8a56bd`, 2026-09-19) | No rules file; conventions only in `package.json`, `index.js`, tests and CI | `examples/real-runs/slash/AGENTS.md` — 45 lines | PASS (sections complete, no leftover placeholders, under the 120-line cap) |
 | [pallets/itsdangerous](https://github.com/pallets/itsdangerous) (Python signing library, main `@672971d6`, 2025-06-14) | No rules file; conventions scattered across `pyproject.toml`, pre-commit hooks and the PR template | `examples/real-runs/itsdangerous/AGENTS.md` — 47 lines | PASS (same checks) |
 | [chalk/chalk](https://github.com/chalk/chalk) (terminal string styling, ESM, zero runtime deps, main `@72110019`, 2026-10-23) | No rules file; conventions only in `package.json`, `source/`, tests and CI | `examples/real-runs/chalk/AGENTS.md` — 50 lines | PASS (same checks) |
+| [tj/commander.js](https://github.com/tj/commander.js) (Node.js CLI framework, ESM, zero runtime deps, main `@a5a7dc0`, 2026-11-07) | No rules file; conventions only in `package.json`, `lib/`, tests and CI | `examples/real-runs/commander/AGENTS.md` — 54 lines | PASS (same checks) |
 
 These drafts were generated locally from a read-only scan of each project.
 Nothing was submitted to the upstream repositories — no PR, no issue, no push.
