@@ -49,7 +49,7 @@ validation tooling and the platform rules reference.
 
 ## Real examples — generated from real public projects
 
-Before selling the full edition, we ran AGENTS.md Forge on seven real public
+Before selling the full edition, we ran AGENTS.md Forge on eight real public
 repositories that had **no `AGENTS.md` anywhere** (verified by searching the whole tree, including `CLAUDE.md` / `.cursorrules` — 0 hits).
 The full generated drafts are in this repo under `examples/real-runs/`:
 
@@ -62,6 +62,7 @@ The full generated drafts are in this repo under `examples/real-runs/`:
 | [pallets/click](https://github.com/pallets/click) (Python CLI toolkit, zero runtime deps, main `@08b803c`, 2026-11-16) | No rules file; conventions only in `pyproject.toml`, pre-commit hooks, tox envs and `docs/contributing.md` | `examples/real-runs/click/AGENTS.md` — 58 lines | PASS (same checks) |
 | [vitejs/vite](https://github.com/vitejs/vite) (frontend dev build tool, pnpm monorepo, main `@35674719`, 2026-11-20) | No rules file; conventions only in `package.json` scripts, `CONTRIBUTING.md` and pre-commit hooks | `examples/real-runs/vite/AGENTS.md` — 65 lines | PASS (same checks) |
 | [prettier/prettier](https://github.com/prettier/prettier) (opinionated code formatter, single-package repo, main `@b459ecf5`, 2026-11-21) | No rules file; conventions only in `package.json` scripts, `CONTRIBUTING.md` and Jest snapshot tests | `examples/real-runs/prettier/AGENTS.md` — 60 lines | PASS (same checks) |
+| [tailwindcss/tailwindcss](https://github.com/tailwindcss/tailwindcss) (utility-first CSS framework, pnpm + turbo monorepo, TS + Rust, main `@511c82a2`, 2026-11-20) | No rules file; conventions only in `package.json` scripts, `.github/CONTRIBUTING.md` and colocated vitest tests | `examples/real-runs/tailwindcss/AGENTS.md` — 65 lines | PASS (same checks) |
 
 These drafts were generated locally from a read-only scan of each project.
 Nothing was submitted to the upstream repositories — no PR, no issue, no push.
