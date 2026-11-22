@@ -49,7 +49,7 @@ validation tooling and the platform rules reference.
 
 ## Real examples — generated from real public projects
 
-Before selling the full edition, we ran AGENTS.md Forge on eight real public
+Before selling the full edition, we ran AGENTS.md Forge on fourteen real public
 repositories that had **no `AGENTS.md` anywhere** (verified by searching the whole tree, including `CLAUDE.md` / `.cursorrules` — 0 hits).
 The full generated drafts are in this repo under `examples/real-runs/`:
 
@@ -63,6 +63,12 @@ The full generated drafts are in this repo under `examples/real-runs/`:
 | [vitejs/vite](https://github.com/vitejs/vite) (frontend dev build tool, pnpm monorepo, main `@35674719`, 2026-11-20) | No rules file; conventions only in `package.json` scripts, `CONTRIBUTING.md` and pre-commit hooks | `examples/real-runs/vite/AGENTS.md` — 65 lines | PASS (same checks) |
 | [prettier/prettier](https://github.com/prettier/prettier) (opinionated code formatter, single-package repo, main `@b459ecf5`, 2026-11-21) | No rules file; conventions only in `package.json` scripts, `CONTRIBUTING.md` and Jest snapshot tests | `examples/real-runs/prettier/AGENTS.md` — 60 lines | PASS (same checks) |
 | [tailwindcss/tailwindcss](https://github.com/tailwindcss/tailwindcss) (utility-first CSS framework, pnpm + turbo monorepo, TS + Rust, main `@511c82a2`, 2026-11-20) | No rules file; conventions only in `package.json` scripts, `.github/CONTRIBUTING.md` and colocated vitest tests | `examples/real-runs/tailwindcss/AGENTS.md` — 65 lines | PASS (same checks) |
+| [django/django](https://github.com/django/django) (high-level Python web framework, main `@0eae0b25`, 2026-11-21) | No rules file; conventions only in `pyproject.toml`, `CONTRIBUTING.rst`, `tox.ini` and pre-commit hooks | `examples/real-runs/django/AGENTS.md` — 68 lines | PASS (sections complete, no leftover placeholders, under the 120-line cap) |
+| [expressjs/express](https://github.com/expressjs/express) (minimalist Node.js web framework, master `@43fca52d`, 2026-11-02) | No rules file; conventions only in `package.json` scripts, `lib/`, `test/` and the Contributing Guide | `examples/real-runs/express/AGENTS.md` — 63 lines | PASS (same checks) |
+| [lodash/lodash](https://github.com/lodash/lodash) (JavaScript utility library, master `@2b5e6f73`, 2026-09-11) | No rules file; conventions only in `package.json` scripts, `.github/CONTRIBUTING.md`, `.jscsrc` and the build scripts | `examples/real-runs/lodash/AGENTS.md` — 66 lines | PASS (same checks) |
+| [jquery/jquery](https://github.com/jquery/jquery) (JavaScript library for DOM manipulation, main `@effd615f`, 2026-11-17) | No rules file; conventions only in `package.json` scripts, `src/` modules, `test/unit/` and `CONTRIBUTING.md` | `examples/real-runs/jquery/AGENTS.md` — 67 lines | PASS (same checks) |
+| [psf/requests](https://github.com/psf/requests) (Python HTTP library, main `@3c7baaa0`, 2026-11-02) | No rules file; conventions only in `pyproject.toml`, `Makefile`, `tox.ini` and `docs/dev/contributing.rst` | `examples/real-runs/requests/AGENTS.md` — 67 lines | PASS (same checks) |
+| [vuejs/core](https://github.com/vuejs/core) (progressive JavaScript framework, main `@7de9e41b`, 2026-11-22) | No rules file; conventions only in `package.json` scripts, `pnpm-workspace.yaml`, `.github/contributing.md` and the commit convention | `examples/real-runs/vue/AGENTS.md` — 70 lines | PASS (same checks) |
 
 These drafts were generated locally from a read-only scan of each project.
 Nothing was submitted to the upstream repositories — no PR, no issue, no push.
