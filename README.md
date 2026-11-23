@@ -49,7 +49,7 @@ validation tooling and the platform rules reference.
 
 ## Real examples — generated from real public projects
 
-Before selling the full edition, we ran AGENTS.md Forge on fourteen real public
+Before selling the full edition, we ran AGENTS.md Forge on fifteen real public
 repositories that had **no `AGENTS.md` anywhere** (verified by searching the whole tree, including `CLAUDE.md` / `.cursorrules` — 0 hits).
 The full generated drafts are in this repo under `examples/real-runs/`:
 
@@ -69,6 +69,7 @@ The full generated drafts are in this repo under `examples/real-runs/`:
 | [jquery/jquery](https://github.com/jquery/jquery) (JavaScript library for DOM manipulation, main `@effd615f`, 2026-11-17) | No rules file; conventions only in `package.json` scripts, `src/` modules, `test/unit/` and `CONTRIBUTING.md` | `examples/real-runs/jquery/AGENTS.md` — 67 lines | PASS (same checks) |
 | [psf/requests](https://github.com/psf/requests) (Python HTTP library, main `@3c7baaa0`, 2026-11-02) | No rules file; conventions only in `pyproject.toml`, `Makefile`, `tox.ini` and `docs/dev/contributing.rst` | `examples/real-runs/requests/AGENTS.md` — 67 lines | PASS (same checks) |
 | [vuejs/core](https://github.com/vuejs/core) (progressive JavaScript framework, main `@7de9e41b`, 2026-11-22) | No rules file; conventions only in `package.json` scripts, `pnpm-workspace.yaml`, `.github/contributing.md` and the commit convention | `examples/real-runs/vue/AGENTS.md` — 70 lines | PASS (same checks) |
+| [axios/axios](https://github.com/axios/axios) (Promise based HTTP client for browser and Node.js, main `@af4f6d96`, 2026-01-26) | No rules file; conventions only in `package.json` scripts, `lib/` modules, `test/unit/` and `CONTRIBUTING.md` | `examples/real-runs/axios/AGENTS.md` — 69 lines | PASS (same checks) |
 
 These drafts were generated locally from a read-only scan of each project.
 Nothing was submitted to the upstream repositories — no PR, no issue, no push.
