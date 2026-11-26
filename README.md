@@ -49,7 +49,7 @@ validation tooling and the platform rules reference.
 
 ## Real examples — generated from real public projects
 
-Before selling the full edition, we ran AGENTS.md Forge on seventeen real public
+Before selling the full edition, we ran AGENTS.md Forge on eighteen real public
 repositories that had **no `AGENTS.md` anywhere** (verified by searching the whole tree, including `CLAUDE.md` / `.cursorrules` — 0 hits).
 The full generated drafts are in this repo under `examples/real-runs/`:
 
@@ -72,6 +72,7 @@ The full generated drafts are in this repo under `examples/real-runs/`:
 | [axios/axios](https://github.com/axios/axios) (Promise based HTTP client for browser and Node.js, main `@af4f6d96`, 2026-01-26) | No rules file; conventions only in `package.json` scripts, `lib/` modules, `test/unit/` and `CONTRIBUTING.md` | `examples/real-runs/axios/AGENTS.md` — 69 lines | PASS (same checks) |
 | [pallets/flask](https://github.com/pallets/flask) (simple framework for building complex web applications, main `@49943b5a`, 2026-10-30) | No rules file; conventions only in `pyproject.toml` scripts, `src/flask/` modules, `tests/` and `docs/contributing.rst` | `examples/real-runs/flask/AGENTS.md` — 59 lines | PASS (same checks) |
 | [fastify/fastify](https://github.com/fastify/fastify) (fast and low overhead web framework for Node.js, main `@f5757f12`, 2026-11-24) | No rules file; conventions only in `package.json` scripts, `CONTRIBUTING.md`, `docs/Guides/` and `eslint.config.js` | `examples/real-runs/fastify/AGENTS.md` — 71 lines | PASS (same checks) |
+| [pallets/jinja](https://github.com/pallets/jinja) (very fast and expressive template engine, main `@5ef70112`, 2025-06-14) | No rules file; conventions only in `pyproject.toml` scripts, `src/jinja2/` modules, `tests/` and the PR template | `examples/real-runs/jinja/AGENTS.md` — 60 lines | PASS (same checks) |
 
 These drafts were generated locally from a read-only scan of each project.
 Nothing was submitted to the upstream repositories — no PR, no issue, no push.
